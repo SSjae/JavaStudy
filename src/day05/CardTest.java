@@ -1,12 +1,11 @@
 package day05;
 
 class Card {
-	String kind;	// 카드의 종류 ( spade, heart, diamond, clover )
-	int number;		// 카드 번호
-
+	String kind;	// 카드의 종류( spade, heart, diamond, clover )
+	int num;		// 카드 번호
+	
 	static int width = 100;		// 카드의 너비
 	static int height = 250;	// 카드의 높이
-
 }
 
 public class CardTest {
@@ -18,17 +17,17 @@ public class CardTest {
 		Card c1 = new Card();
 		Card c2 = new Card();
 		
-		c1.kind = "Heart";
-		c1.number = 7;
+		c1.kind = "Diamond";
+		c1.num = 5;
 		
-		c2.kind = "Spade";
-		c2.number = 4;
+		c2.kind = "Clover";
+		c2.num = 2;
 		
-		System.out.println("c1 : " + c1.kind + " " + c1.number);
-		System.out.println("c2 : " + c2.kind + " " + c2.number);
+		System.out.println("c1 : " + c1.kind + " " + c1.num);
+		System.out.println("c2 : " + c2.kind + " " + c2.num);
 		
 		c1.width = 200;
-		c1.height = 300;
+		c2.height = 300;
 		
 		System.out.println(c2.width); // 200
 		System.out.println(c2.height); // 300
