@@ -19,7 +19,7 @@ public class ReferenceParamEx {
 	static void change(Data d1) { // Data d1 = d;
 		System.out.println("change()에서의 d1주소 : " + d1);
 		d1.x = 30;
-		System.out.println("chanfe() : " + d1.x); // 30
+		System.out.println("change() : " + d1.x); // 30
 	}
 	
 	static void plusOne(int[] arr) {
