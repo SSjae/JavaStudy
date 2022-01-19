@@ -5,7 +5,7 @@ class Car2 {
 	String gearType;
 	int door;
 	
-	// this vs this()
+	// this vs this() 
 	
 	Car2(String color, String gearType, int door) {
 		this.color = color;

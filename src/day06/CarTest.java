@@ -5,7 +5,7 @@ class Car {
 	String gearType;
 	int door;
 	
-	Car() {} // 기본 생성자
+	Car() {} // 기본 생성자    
 	
 	Car(String c, String g, int d) { // 생성자
 		color = c;
