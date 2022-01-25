@@ -2,18 +2,18 @@ package day07;
 
 public class SuperTest {
 	public static void main(String[] args) {
-		Child c = new Child();
+		Child2 c = new Child2();
 		c.method();
 		c.method2();
 	}
 }
 
-class Parent {
+class Parent2 {
 	int x = 10;
 	int y = 20;
 }
 
-class Child extends Parent {
+class Child2 extends Parent2 {
 	int y = 30;
 	void method() {
 		System.out.println("x = " + x);			// 10

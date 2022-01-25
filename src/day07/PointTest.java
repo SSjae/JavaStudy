@@ -7,7 +7,7 @@ public class PointTest {
 	}
 }
 
-class Point3D extends Point {
+class Point3D extends Point2 {
 	int z;
 	
 	Point3D(int x, int y, int z) {
