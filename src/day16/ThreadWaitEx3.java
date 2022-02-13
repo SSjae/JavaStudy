@@ -6,7 +6,7 @@ public class ThreadWaitEx3 {
 	public static void main(String[] args) throws Exception {
 		Table3 Table3 = new Table3(); // 여러 쓰레드가 공유하는 객체
 		
-		new Thread(new Cook3(Table3), "Cook31").start(); // 요리를 추가하는 쓰레드
+		new Thread(new Cook3(Table3), "Cook3").start(); // 요리를 추가하는 쓰레드
 		new Thread(new Customer3(Table3, "donut"), "CUST1").start(); // donut을 가져가는 쓰레드
 		new Thread(new Customer3(Table3, "buger"), "CUST2").start(); // buger를 가져가는 쓰레드
 		
@@ -45,8 +45,6 @@ class Table3 {
 					wait();		// CUST 쓰레드를 기다리게 한다.
 					Thread.sleep(500);
 				} catch (InterruptedException e) {}
-				// lock을 반납을 안 해서 계속 돌아감
-				// this가 Table3이기 때문에 lock을 반납 안 해줘서 add가 실행이 안됨
 			}
 			
 			while(true) {
